@@ -213,6 +213,7 @@ void print_or_compare(FILE** file, char *produced, size_t str_size, uint dev_nbr
 
   if ( comp == 0 ) {
     fprintf(*file,"%s\n",produced);
+    fflush(*file);
     return;
   }
 
